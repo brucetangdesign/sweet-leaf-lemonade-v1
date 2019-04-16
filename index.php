@@ -83,6 +83,7 @@ $page = "home-page";
       </div>
     -->
       <div class="bg-gradient4">
+        <div class="texture-top"></div>
         <div class="nyc-bg"></div>
       </div>
     </section>
@@ -150,6 +151,10 @@ $page = "home-page";
 -->
     <section id="about-products" class="slide-main slide4">
       <div class="product-clouds-left rellax" data-rellax-speed="-8"></div>
+      <div class="product-left-blue-mango rellax" data-rellax-speed="-2"></div>
+      <div class="product-left-pom-lem-lime rellax" data-rellax-speed="3"></div>
+      <div class="product-right-lem-lime rellax" data-rellax-speed="-3"></div>
+      <div class="product-right-cran-orange rellax" data-rellax-speed="4"></div>
       <div class="product-clouds-right rellax" data-rellax-speed="3"></div>
       <div class="about-products-main">
         <h1>FPO Our famous organic lemonade recipes for y’all and all y’alls taste.</h1>

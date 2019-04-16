@@ -80,6 +80,18 @@
   }
 }
 
+.texture-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 1900px;
+  height: 100%;
+  @include background-2x( '../images/bg-texture', 'png', contain, auto, center top, no-repeat );
+}
+
 .floral-bg, .nyc-bg, .skyline, .lights{
   position: absolute;
   top: 0;
@@ -716,7 +728,7 @@ table.nutritional-chart{
   letter-spacing: -1px;
   text-align: center;
   font-size: 1rem;
-  margin-top: 0.6rem;
+  margin-top: 1.7rem;
 
   th, td{
     vertical-align: middle;
@@ -1175,10 +1187,80 @@ table.nutritional-chart{
 .product-clouds-right{
   position: absolute;
   right: 0;
-  top: 200px;
+  top: -50px;
   @include background-2x( '../images/products-clouds-right', 'png', contain, auto, left top, no-repeat );
 
   @include size-to-screen-width(746,1671,0.4);
+}
+
+.product-left-blue-mango{
+  position: absolute;
+  left: 7vw;
+  top: 400px;
+  @include background-2x( '../images/products-side-left-blue-mango', 'png', contain, auto, left top, no-repeat );
+
+  @include size-to-screen-width(186,374,0.5);
+
+  @include breakpoint(m){
+    top: 535px;
+  }
+
+  @include breakpoint(s){
+    display: none;
+  }
+}
+
+.product-left-pom-lem-lime{
+  position: absolute;
+  left: 0;
+  top: 440px;
+  @include background-2x( '../images/products-side-left-pom-lem-lime', 'png', contain, auto, left top, no-repeat );
+
+  @include size-to-screen-width(218,564,0.5);
+
+  @include breakpoint(m){
+    top: 525px;
+  }
+
+  @include breakpoint(s){
+    display: none;
+  }
+}
+
+.product-right-lem-lime{
+  position: absolute;
+  right: 0;
+  top: 400px;
+  z-index: 1;
+  @include background-2x( '../images/products-side-right-lem-lime', 'png', contain, auto, left top, no-repeat );
+
+  @include size-to-screen-width(230,386,0.5);
+
+  @include breakpoint(m){
+    top: 535px;
+  }
+
+  @include breakpoint(s){
+    display: none;
+  }
+}
+
+.product-right-cran-orange{
+  position: absolute;
+  right: 0;
+  top: 460px;
+  z-index: 1;
+  @include background-2x( '../images/products-side-right-cran-orange', 'png', contain, auto, left top, no-repeat );
+
+  @include size-to-screen-width(275,523,0.5);
+
+  @include breakpoint(m){
+    top: 555px;
+  }
+
+  @include breakpoint(s){
+    display: none;
+  }
 }
 
 .center{

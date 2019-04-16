@@ -678,6 +678,27 @@ footer li i {
   opacity: 0;
 }
 
+.texture-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 1900px;
+  height: 100%;
+  background-image: url("../images/bg-texture.png");
+  background-size: contain auto;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  .texture-top {
+    background-image: url("../images/bg-texture@2x.png");
+  }
+}
+
 .floral-bg, .nyc-bg, .skyline, .lights {
   position: absolute;
   top: 0;
@@ -1436,7 +1457,7 @@ table.nutritional-chart {
   letter-spacing: -1px;
   text-align: center;
   font-size: 1rem;
-  margin-top: 0.6rem;
+  margin-top: 1.7rem;
 }
 table.nutritional-chart th, table.nutritional-chart td {
   vertical-align: middle;
@@ -1899,7 +1920,7 @@ table.nutritional-chart td span.chart-flavor:after {
 .product-clouds-right {
   position: absolute;
   right: 0;
-  top: 200px;
+  top: -50px;
   background-image: url("../images/products-clouds-right.png");
   background-size: contain auto;
   background-size: contain;
@@ -1915,6 +1936,136 @@ table.nutritional-chart td span.chart-flavor:after {
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .product-clouds-right {
     background-image: url("../images/products-clouds-right@2x.png");
+  }
+}
+
+.product-left-blue-mango {
+  position: absolute;
+  left: 7vw;
+  top: 400px;
+  background-image: url("../images/products-side-left-blue-mango.png");
+  background-size: contain auto;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 9.6875vw;
+  min-width: 5.8125rem;
+  max-width: 11.625rem;
+  height: 19.4791666667vw;
+  min-height: 11.6875rem;
+  max-height: 23.375rem;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  .product-left-blue-mango {
+    background-image: url("../images/products-side-left-blue-mango@2x.png");
+  }
+}
+@media (max-width: 1020px) {
+  .product-left-blue-mango {
+    top: 535px;
+  }
+}
+@media (max-width: 768px) {
+  .product-left-blue-mango {
+    display: none;
+  }
+}
+
+.product-left-pom-lem-lime {
+  position: absolute;
+  left: 0;
+  top: 440px;
+  background-image: url("../images/products-side-left-pom-lem-lime.png");
+  background-size: contain auto;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 11.3541666667vw;
+  min-width: 6.8125rem;
+  max-width: 13.625rem;
+  height: 29.375vw;
+  min-height: 17.625rem;
+  max-height: 35.25rem;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  .product-left-pom-lem-lime {
+    background-image: url("../images/products-side-left-pom-lem-lime@2x.png");
+  }
+}
+@media (max-width: 1020px) {
+  .product-left-pom-lem-lime {
+    top: 525px;
+  }
+}
+@media (max-width: 768px) {
+  .product-left-pom-lem-lime {
+    display: none;
+  }
+}
+
+.product-right-lem-lime {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  z-index: 1;
+  background-image: url("../images/products-side-right-lem-lime.png");
+  background-size: contain auto;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 11.9791666667vw;
+  min-width: 7.1875rem;
+  max-width: 14.375rem;
+  height: 20.1041666667vw;
+  min-height: 12.0625rem;
+  max-height: 24.125rem;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  .product-right-lem-lime {
+    background-image: url("../images/products-side-right-lem-lime@2x.png");
+  }
+}
+@media (max-width: 1020px) {
+  .product-right-lem-lime {
+    top: 535px;
+  }
+}
+@media (max-width: 768px) {
+  .product-right-lem-lime {
+    display: none;
+  }
+}
+
+.product-right-cran-orange {
+  position: absolute;
+  right: 0;
+  top: 460px;
+  z-index: 1;
+  background-image: url("../images/products-side-right-cran-orange.png");
+  background-size: contain auto;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 14.3229166667vw;
+  min-width: 8.59375rem;
+  max-width: 17.1875rem;
+  height: 27.2395833333vw;
+  min-height: 16.34375rem;
+  max-height: 32.6875rem;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  .product-right-cran-orange {
+    background-image: url("../images/products-side-right-cran-orange@2x.png");
+  }
+}
+@media (max-width: 1020px) {
+  .product-right-cran-orange {
+    top: 555px;
+  }
+}
+@media (max-width: 768px) {
+  .product-right-cran-orange {
+    display: none;
   }
 }
 
