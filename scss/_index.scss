@@ -40,7 +40,7 @@
     background-color: #e8851a;
   }
   &.bg4{
-    background-color: $sl-orange;
+    background-color: $sl-pink;
   }
 
   > div{
@@ -50,7 +50,8 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
+    background-size: 100% 100%;
     opacity: 1;
 
     &.bg-gradient1{
@@ -69,7 +70,7 @@
     }
 
     &.bg-gradient4{
-      background-image: url('../images/bg-gradient-slide1.svg');
+      background-image: url('../images/bg-gradient-products.png');
       //background-color: $sl-orange;
     }
 
@@ -79,7 +80,7 @@
   }
 }
 
-.floral-bg, .austin-bg, .skyline, .lights{
+.floral-bg, .nyc-bg, .skyline, .lights{
   position: absolute;
   top: 0;
   left: 0;
@@ -138,10 +139,8 @@
   }
 }
 
-.austin-bg{
-  background-image: url('../images/austin-bg.png');
-  background-size: contain;
-  background-position: center;
+.nyc-bg{
+  @include background-2x( '../images/nyc-bg', 'png', contain, auto, center bottom, no-repeat );
 
   @include breakpoint(m){
     background-size: 150vw;
@@ -457,9 +456,10 @@
   width: 100%;
   max-width: $site-width-max;
   margin-left: auto;
-  margin-bottom: 3rem;
+  //margin-bottom: 3rem;
   height: auto;
-  padding-top: 3.5rem;
+  padding-top: 280px;
+  padding-bottom: 70px;
   text-align: center;
 
   h1{
@@ -472,6 +472,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5rem;
+  }
+
+  p{
+    max-width: 800px;
   }
 
   ul{
@@ -525,22 +529,19 @@
 }
 
 .about-products-main-image{
-  width: 92.3vw;
-  height: 30.34vw;
-  max-width: 1329px;
-  max-height: 437px;
   margin: 3rem auto 0;
 
   @include background-2x( '../images/home-products-main', 'png', contain, auto, center center, no-repeat );
   background-size: contain !important;
 
+  @include size-to-screen-width(865,661,0.6);
+
   @include breakpoint(xs-680){
-    width: 100%;
-    height: 53.82vw;
-    max-width: 680px;
-    max-height: 366px;
-    margin-top: 0.5rem;
-    @include background-2x( '../images/home-products-main-mobile', 'png', contain, auto, center center, no-repeat );
+    @include size-to-screen-width(865,661,0.5);
+  }
+
+  @include breakpoint(xs){
+    @include size-to-screen-width(865,661,0.33);
   }
 }
 
@@ -621,48 +622,39 @@
 
   &:before{
     background-image: url('../images/chart-leaves-left.png');
-    width: 12.95vw;
-    height: 12.6vw;
-    max-width: getRem(154px);
-    max-height: getRem(150px);
-    left: -116px;
-    bottom: -43px;
+    @include size-to-screen-width(308,194,1);
+    max-width: 308px;
+    max-height: 194px;
+    left: -180px;
+    bottom: -96px;
     z-index: 3;
 
-    @include breakpoint(m-l){
-      left: -9.75vw;
-      bottom: -3.6vw;
+    @include breakpoint(l){
+      @include size-to-screen-width(308,194,0.8);
+      left: -122px;
+    }
+
+    @include breakpoint(s){
+      left: -86px;
     }
   }
 
   &:after{
     background-image: url('../images/chart-leaves-right.png');
-    width: 20.5vw;
-    height: 12.27vw;
-    max-width: getRem(244px);
-    max-height: getRem(146px);
-    right: -121px;
-    bottom: -58px;
+    @include size-to-screen-width(256,158,1);
+    max-width: 256px;
+    max-height: 158px;
+    right: -165px;
+    bottom: -88px;
     z-index: 3;
 
-    @include breakpoint(m-l){
-      right: -10.17vw;
-      bottom: -4.878vw;
+    @include breakpoint(l){
+      @include size-to-screen-width(308,194,0.8);
+      right: -151px;
     }
-  }
 
-  .honeycomb{
-    background-image: url('../images/honeycomb.png');
-    width: 15.9vw;
-    height: 13.54vw;
-    max-width: getRem(189px);
-    max-height: getRem(161px);
-    left: -113px;
-    bottom: 0;
-    z-index: 1;
-
-    @include breakpoint(m-l){
-      left: -9.75vw;
+    @include breakpoint(s){
+      right: -86px;
     }
   }
 
@@ -803,26 +795,7 @@ table.nutritional-chart{
         @include breakpoint(xs-680){
           left: 100px;
         }
-      }
-
-      &.sweet{
-        &:after{
-          background-image: url("../images/chart-cubes-sweet.png");
-        }
-      }
-
-      &.semisweet{
-        &:after{
-          background-image: url("../images/chart-cubes-semisweet.png");
-        }
-      }
-
-      &.unsweet{
-        &:after{
-          background-image: url("../images/chart-cubes-unsweet.png");
-        }
-      }
-    }
+      }    }
   }
 
   @include breakpoint (m-l){
@@ -838,16 +811,16 @@ table.nutritional-chart{
   }
 
   @include breakpoint (xs-680){
-    font-size: 0.7rem;
+    font-size: 0.66rem;
     width: 100%;
 
     thead .small-text{
-      font-size: 0.7em;
+      font-size: 0.66em;
     }
 
     th, td{
       &:nth-child(1){
-        max-width: 34.666vw;
+        max-width: 30vw;
         padding-left: getRem(23px);
         padding-right: 0;
       }
@@ -1188,6 +1161,24 @@ table.nutritional-chart{
       bottom: 20vh;
     }
   }
+}
+
+.product-clouds-left{
+  position: absolute;
+  left: 0;
+  top: 200px;
+  @include background-2x( '../images/products-clouds-left', 'png', contain, auto, left top, no-repeat );
+
+  @include size-to-screen-width(741,1657,0.4);
+}
+
+.product-clouds-right{
+  position: absolute;
+  right: 0;
+  top: 200px;
+  @include background-2x( '../images/products-clouds-right', 'png', contain, auto, left top, no-repeat );
+
+  @include size-to-screen-width(746,1671,0.4);
 }
 
 .center{

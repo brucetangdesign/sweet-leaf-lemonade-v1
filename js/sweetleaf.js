@@ -6,6 +6,7 @@ $( document ).ready(function() {
   var sec4 = false;
   var $bg = $("#bg");
 
+  /*
   checkScroll();
 
   //call the check when you scroll or resize
@@ -64,6 +65,7 @@ $( document ).ready(function() {
     }
     eval("sec" + secNum + " = true");
   }
+  */
 
   var rellax = new Rellax('.rellax', {
     center: true

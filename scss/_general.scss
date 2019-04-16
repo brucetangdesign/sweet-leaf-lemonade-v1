@@ -10,8 +10,8 @@ html,body{
   color: $sl-brown;
   font-family: "Vision Heavy";
   font-size: $base-font-size;
-  background-color: $sl-orange;
-  overflow-x: hidden;
+  background-color: $sl-pink;
+  //overflow-x: hidden;
 
   @include breakpoint(s){
     font-size: $mobile-font-size;

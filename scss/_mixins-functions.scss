@@ -95,6 +95,9 @@
 
   background-image: url("#{$at1x_path}");
   background-size: $w $h;
+  @if $w == "contain" {
+    background-size: $w;
+  }
   background-position: $pos;
   background-repeat: $repeat;
 
@@ -103,6 +106,21 @@
   all and (min--moz-device-pixel-ratio: 1.5),
   all and (min-device-pixel-ratio: 1.5) {
     background-image: url("#{$at2x_path}");
+  }
+}
+
+//Size an element as a proportion of screen width
+@mixin size-to-screen-width($natW,$natH,$minPerc:0.1,$widthFactor:$site-width-max){
+  $site-width-num: $widthFactor / 1px;
+
+  width: (($natW / $site-width-num) * 100) + 0vw;
+  min-width: getRem(($natW * $minPerc) + 0px);
+  max-width: getRem($natW + 0px);
+
+  @if($natH != auto){
+    height: (($natH / $site-width-num) * 100) + 0vw;
+    min-height: getRem(($natH * $minPerc) + 0px);
+    max-height: getRem($natH + 0px);
   }
 }
 
