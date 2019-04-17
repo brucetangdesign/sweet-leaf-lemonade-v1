@@ -466,7 +466,6 @@
 #about-products.slide-main{
   display: block;
   width: 100%;
-  max-width: $site-width-max;
   margin-left: auto;
   //margin-bottom: 3rem;
   height: auto;
@@ -528,7 +527,7 @@
 .about-products-main{
   position: relative;
   text-align: center;
-  max-width: $container-width-max;
+  //max-width: $container-width-max;
   margin-left: auto;
   margin-right: auto;
 
