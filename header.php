@@ -17,7 +17,7 @@
   </div>
   <nav>
     <ul class="hr-list">
-      <li><a href="mailto:sweetleaftea@casupport.com">Contact</a></li>
+      <li><a href="https://www.sweetleaftea.com/contact/" target="_blank">Contact</a></li>
     </ul>
   </nav>
 </header>
