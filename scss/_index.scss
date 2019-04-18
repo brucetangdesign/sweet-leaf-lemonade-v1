@@ -1212,7 +1212,7 @@ table.nutritional-chart{
   @include size-to-screen-width(186,374,0.5);
 
   @include breakpoint(m){
-    top: 535px;
+    top: 622px;
   }
 
   @include breakpoint(s){
@@ -1229,7 +1229,7 @@ table.nutritional-chart{
   @include size-to-screen-width(218,564,0.5);
 
   @include breakpoint(m){
-    top: 525px;
+    top: 572px;
   }
 
   @include breakpoint(s){
@@ -1247,7 +1247,7 @@ table.nutritional-chart{
   @include size-to-screen-width(230,386,0.5);
 
   @include breakpoint(m){
-    top: 535px;
+    top: 622px;
   }
 
   @include breakpoint(s){
@@ -1264,8 +1264,13 @@ table.nutritional-chart{
 
   @include size-to-screen-width(275,523,0.5);
 
+  @include breakpoint(m-l){
+    right: -53px
+  }
+
   @include breakpoint(m){
     top: 555px;
+    right: 0px;
   }
 
   @include breakpoint(s){

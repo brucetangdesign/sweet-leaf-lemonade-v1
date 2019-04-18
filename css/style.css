@@ -1901,7 +1901,7 @@ table.nutritional-chart td span.chart-flavor:after {
 }
 @media (max-width: 1020px) {
   .product-left-blue-mango {
-    top: 535px;
+    top: 622px;
   }
 }
 @media (max-width: 768px) {
@@ -1933,7 +1933,7 @@ table.nutritional-chart td span.chart-flavor:after {
 }
 @media (max-width: 1020px) {
   .product-left-pom-lem-lime {
-    top: 525px;
+    top: 572px;
   }
 }
 @media (max-width: 768px) {
@@ -1966,7 +1966,7 @@ table.nutritional-chart td span.chart-flavor:after {
 }
 @media (max-width: 1020px) {
   .product-right-lem-lime {
-    top: 535px;
+    top: 622px;
   }
 }
 @media (max-width: 768px) {
@@ -1997,9 +1997,15 @@ table.nutritional-chart td span.chart-flavor:after {
     background-image: url("../images/products-side-right-cran-orange@2x.png");
   }
 }
+@media (max-width: 1188px) {
+  .product-right-cran-orange {
+    right: -53px;
+  }
+}
 @media (max-width: 1020px) {
   .product-right-cran-orange {
     top: 555px;
+    right: 0px;
   }
 }
 @media (max-width: 768px) {
